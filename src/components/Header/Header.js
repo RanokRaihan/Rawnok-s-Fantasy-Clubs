@@ -5,7 +5,8 @@ const Header = (props) => {
     return (
         <div className='main-header'>
             {
-                props.content[0]
+                //dynamic data for header component
+                props.content
             }
         </div>
     );

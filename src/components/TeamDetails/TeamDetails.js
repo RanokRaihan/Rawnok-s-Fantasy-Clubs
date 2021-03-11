@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFlag, faFutbol, faMars, faVenus, faClock, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 
 const TeamDetails = () => {
@@ -17,8 +18,9 @@ const TeamDetails = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setSingleTeam(data.teams[0]))
+            .catch(err => alert(err));
     }, [teamId]);
-
+    //destructuring loaded data
     const {
         strAlternate,
         intFormedYear,
@@ -32,7 +34,8 @@ const TeamDetails = () => {
         strYoutube,
         strWebsite
     } = singleTeam;
-    console.log(singleTeam);
+
+    // console.log(singleTeam);
 
     //conditional image render
     let isMale = true;
@@ -42,7 +45,7 @@ const TeamDetails = () => {
     else if (strGender === 'Female') {
         isMale = false;
     }
-
+    //conditional background color
     let bgColor = isMale ? "#076ae4" : "#FF6812";
 
     return (
@@ -90,6 +93,10 @@ const TeamDetails = () => {
                     <p>
                         {strDescriptionES}
                     </p>
+                    <Link to='../home'>
+                        <button className='btn btn-warning back-button'>Go Back</button>
+                    </Link>
+
 
                 </div>
                 <div className="social">
@@ -106,6 +113,7 @@ const TeamDetails = () => {
 
 
             </div>
+
         </div>
     );
 };

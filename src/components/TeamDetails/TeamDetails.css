@@ -1,5 +1,5 @@
 .team-details-wrapper {
-    background: #1e1a38;
+    background: #116584;
     overflow: hidden;
 }
 .team-details {
@@ -10,8 +10,9 @@
     /* background: #076ae4; */
     color: #fff;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px auto;
+    border: 3px solid #ff7500;
 }
 .team-image img {
     width: 100%;
@@ -48,14 +49,24 @@
 .social {
     width: 300px;
     margin: 35px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    background: #045877;
+    border-radius: 15px;
 }
 .social a {
     display: inline-block;
     padding: 8px 15px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin: 0 auto;
     transition: 0.3s all ease;
+}
+.back-button {
+    display: block;
+    margin: 20px auto;
 }
 .youtube {
     color: #c4302b;

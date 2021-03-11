@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 const Team = (props) => {
     // console.log(props);
+
+    //destructuring props data 
     const { strAlternate, strTeamBadge, strSport, strGender, idTeam } = props.team;
     return (
         <div className='single-team'>
@@ -17,9 +19,8 @@ const Team = (props) => {
             <p className="sport-type">Sport Type: {strSport}</p>
             <p className="sport-type">Gender: {strGender}</p>
             <Link to={`/teamDetails/${idTeam}`}>
-                <button className='btn btn-primary' >explore <FontAwesomeIcon icon={faArrowRight} /></button>
+                <button className='btn btn-info' >explore <FontAwesomeIcon icon={faArrowRight} /></button>
             </Link>
-
         </div>
     );
 };
