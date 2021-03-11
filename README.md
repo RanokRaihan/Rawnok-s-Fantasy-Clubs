@@ -1,6 +1,6 @@
 ## Welcome to
 
-# Rawnok's Fantacy Clubs
+# Rawnok's Fantasy Clubs
 
 ### version: 1.0
 
