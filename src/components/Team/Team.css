@@ -1,0 +1,39 @@
+.img-wrapper {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 25px;
+}
+
+.team-logo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.team-name {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;
+    /* min-height: 55px; */
+}
+.single-team {
+    padding: 8px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid #ff7500;
+}
+.sport-type {
+    text-align: center;
+    color: gray;
+}
+.btn {
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease !important;
+}
