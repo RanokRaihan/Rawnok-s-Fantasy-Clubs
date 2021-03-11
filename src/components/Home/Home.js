@@ -23,7 +23,7 @@ const Home = () => {
         return (
             <div>
                 <h3>Welcome To</h3>
-                <h1>Rawnok's Fantasy Clubs</h1>
+                <h1>Rawnok's Fantasy Sports Clubs</h1>
             </div>
         )
     }
