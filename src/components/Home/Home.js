@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import Team from '../Team/Team';
-import './Home.css'
+import './Home.css';
 
 
 const Home = () => {
